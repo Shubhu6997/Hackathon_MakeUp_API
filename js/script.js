@@ -63,7 +63,8 @@ function createProduct({ brand, name, price, price_sign, image_link, product_lin
     container.setAttribute("class", "container");
     container.innerHTML = `
         <div class = "image_container">
-            <img src = "${image_link}" alt = "Product Image" onerror="this.onerror=null;this.src='img/default.png';">
+            <img src = "${image_link}" 
+            alt = "Product Image" onerror="this.onerror=null;this.src='img/default.png';">
         </div>
         <div class = "product_info">
             <p class = "brand">${brand}</p>
